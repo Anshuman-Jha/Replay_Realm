@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../interfaces"
+		},
+		{
+			"path": "../../../types"
+		}
+	],
+	"settings": {}
+}
