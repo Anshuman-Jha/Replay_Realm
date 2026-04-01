@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# 🎬 ReplayRealm
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+ReplayRealm is a stunning, modern movie discovery application built with Expo and React Native. Explore the latest blockbusters, discover trending films based on community searches, and dive deep into movie details—all wrapped in a beautiful, dark-themed UI.
 
-## Get started
+<div align="center">
+  <img src="assets/images/movie_replayrealm.jpg" width="45%" alt="ReplayRealm Home Screen - Trending & Latest Movies" />
+  &nbsp;
+  <img src="assets/images/dhurandhar_replayrealm.jpg" width="45%" alt="ReplayRealm Movie Details Screen" />
+</div>
 
-1. Install dependencies
+## ✨ Features
 
+- **Trending Movies**: Discover what's hot right now. ReplayRealm tracks searches using an Appwrite backend to dynamically surface the most popular movies among users.
+- **Latest Releases**: Browse through the newest and most popular movies powered by the TMDB API.
+- **Deep Search**: Effortlessly find any movie you're looking for.
+- **Comprehensive Details**: Get all the info you need about a movie, including poster art, ratings, runtime, overview, genres, budget, and production companies.
+- **Premium UI/UX**: Crafted with NativeWind (Tailwind CSS for React Native) for a beautiful, responsive, and truly native feel, featuring dark mode aesthetics.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Expo](https://expo.dev/) & [React Native](https://reactnative.dev/)
+- **Styling**: [NativeWind](https://www.nativewind.dev/) (Tailwind CSS)
+- **Movie Data**: [TMDB API](https://developer.themoviedb.org/docs)
+- **Backend/Database**: [Appwrite](https://appwrite.io/) (Tracks search analytics to generate the trending list)
+
+## 🚀 Getting Started
+
+Follow these steps to get ReplayRealm running on your local machine.
+
+### Prerequisites
+
+- Node.js installed
+- Expo CLI or Expo Go app on your physical device (or a configured Android/iOS emulator)
+- A TMDB API Key
+- An Appwrite Project (for the trending feature)
+
+### Installation
+
+1. **Clone the repository** (if applicable) or navigate to the project directory:
+   ```bash
+   cd ReplayRealm
+   ```
+
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Configure Environment Variables**:
+   Create a `.env` file in the root directory and add your required keys:
+   ```env
+   EXPO_PUBLIC_MOVIE_API_KEY=your_tmdb_api_key_here
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
+   EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_appwrite_database_id
+   EXPO_PUBLIC_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+   ```
 
+4. **Start the app**:
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## 🤝 Contributing
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📝 License
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License.
